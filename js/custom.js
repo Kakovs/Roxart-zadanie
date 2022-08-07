@@ -1,16 +1,32 @@
-let scrollToTopBtn = document.querySelector("header");
+let scrollHeader = document.querySelector("header");
 
-function handleScroll() {
+const handleScroll = () => {
 
+
+    
     const scrooled = window.scrollY;
-    console.log(scrooled);
-
     if( scrooled > 40){
-        scrollToTopBtn.classList.add("smallHeader");
+        scrollHeader.classList.add("smallHeader");
     }else{
-        scrollToTopBtn.classList.remove("smallHeader");
+        scrollHeader.classList.remove("smallHeader");
     }
 }
 
-
 document.addEventListener("scroll", handleScroll);
+
+
+let hamburger = document.querySelector(".hamburger");
+
+const activateMenu = () =>{
+
+    if (hamburger.classList.contains("active")) {
+        hamburger.classList.remove("active")
+    } else {
+        hamburger.classList.add("active")
+    }
+}
+
+hamburger.addEventListener("click", activateMenu);
+
+
+

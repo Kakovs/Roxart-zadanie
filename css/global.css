@@ -14,10 +14,15 @@
 
 body{
     font-family: 'Open Sans';
+    overflow-x: hidden;
 }
 
 a{
     text-decoration: none;
+}
+
+.first{
+    padding-top: 85px;
 }
 
 @media (min-width: 1400px){
