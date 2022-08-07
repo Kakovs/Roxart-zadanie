@@ -1,0 +1,27 @@
+@font-face{
+    font-family: 'Averta';
+    src: url(font/Averta-Regular.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Abril_Display';
+    src: url(/font/Abril_Display_ExtraBold.otf) format('opentype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+body{
+    font-family: 'Open Sans';
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1140px;
+    }
+}
