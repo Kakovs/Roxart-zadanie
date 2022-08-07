@@ -12,6 +12,13 @@
     font-style: italic;
 }
 
+@media (min-width: 1400px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+
 body{
     font-family: 'Open Sans';
     overflow-x: hidden;
@@ -25,8 +32,22 @@ a{
     padding-top: 85px;
 }
 
-@media (min-width: 1400px){
-    .container{
-        max-width: 1140px;
-    }
+.yellowButton{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 35px;
+    border-radius: 20px;
+    border: 2px solid #CC9745;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.yellowButton:hover{
+    background-color: #CC9745;
+    color: #fff;
 }
