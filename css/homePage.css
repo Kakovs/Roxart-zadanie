@@ -88,6 +88,118 @@
     max-width: 100%;
 }
 
+/* weddings */
+
+#weddings{
+    background-color: #FBFAF5;
+    padding-bottom: 54px;
+    position: relative;
+}
+
+#weddings::before{
+    content: url('/img/Mask Group 5.png');
+    left: -205px;
+    bottom: 54px;
+    position: absolute;
+    z-index: 0;
+}
+
+#weddings .weddingsText,
+#weddings .weddingOffers{
+    z-index: 100;
+    position: relative;
+}
+
+.weddingsText{
+    max-width: 1010px;
+}
+
+#weddings .title{
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin: 0 auto 56px;
+    padding: 0;
+}
+
+#weddings .title::after{
+    content: '';
+    background-image: url('/img/Warstwa 2.svg');
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translate(100%,-50%) rotate(180deg);
+    width: 30px;
+    height: 42px;
+}
+
+#weddings .title::before{
+    content: '';
+    background-image: url('/img/Warstwa 2.svg');
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translate(-100%,-50%);
+    width: 30px;
+    height: 42px;
+}
+
+#weddings .subTitle{
+    text-align: center;
+    margin-bottom: 23px;
+    color: #000;
+}
+
+#weddings .text{
+    text-align: center;
+}
+
+.weddingOffers{
+    margin-top: 75px;
+    margin-bottom: 45px;
+}
+
+.weddingOffer{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.weddingOffer img{
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.wedingOfferTitle{
+    font-size: 30px;
+    line-height: 46px;
+    font-family: 'Abril_Display';
+    color: #7c1111;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mobile */
 
 @media(max-width:1100px){
