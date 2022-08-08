@@ -28,6 +28,10 @@ a{
     text-decoration: none;
 }
 
+img{
+    max-width: 100%;
+}
+
 .first{
     padding-top: 85px;
 }
