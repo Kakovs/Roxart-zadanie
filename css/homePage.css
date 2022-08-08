@@ -175,7 +175,130 @@
     margin-bottom: 45px;
 }
 
+/* offer section */
 
+#offerSection{
+    background-color: #7C1111;
+    padding-top: 70px;
+    padding-bottom: 330px;
+}
+
+#offerSection .title{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin: 0 auto 56px;
+    padding: 0;
+}
+
+#offerSection .title::after{
+    content: '';
+    background-image: url('/img/Warstwa 2.2.svg');
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translate(100%,-50%);
+    width: 30px;
+    height: 42px;
+}
+
+#offerSection .title::before{
+    content: '';
+    background-image: url('/img/Warstwa 2.2.svg');
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translate(-100%,-50%) rotate(180deg);
+    width: 30px;
+    height: 42px;
+}
+
+#offerSection [data-tab-content] {
+    display: none;
+}
+  
+#offerSection .active[data-tab-content] {
+    display: block;
+}
+
+.tabs{
+    padding-left: 0;
+}
+
+.tabs li{
+    border-bottom: solid 1px #D6DCE1;
+    height: 78px;
+    display: flex;
+    align-items: center;
+}
+
+.tabs li:hover{
+    cursor: pointer;
+}
+
+.tabs li:hover p{
+    background-color: #934141;
+    height: 64px;
+}
+
+.tabs li p{
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    height: 77px;
+    position: relative;
+    padding: 0 43px 0 62px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    border-left: 5px solid #601010;
+    width: 100%;
+}
+
+#offerSection li.active p{
+    height: 64px;
+    background-color: #934141;
+}
+
+.tabs li p::before{
+    content: '';
+    background-image: url('/img/arrow-03.svg');
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 29px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tabs li::marker{
+    content: none;
+}
+
+.tabContent{
+    max-width: 730px;
+    margin-left: auto;
+}
+
+.tabContent p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+.tabContent img{
+    margin-bottom: 64px;
+}
+
+.tabContent p b{
+    font-weight: 600;
+}
 
 
 /* mobile */
