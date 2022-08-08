@@ -9,7 +9,7 @@
     font-family: 'Abril_Display';
     src: url(/font/Abril_Display_ExtraBold.otf) format('opentype');
     font-weight: 800;
-    font-style: italic;
+    font-style: normal;
 }
 
 @media (min-width: 1400px){
@@ -50,4 +50,29 @@ a{
 .yellowButton:hover{
     background-color: #CC9745;
     color: #fff;
+}
+
+.title{
+    font-family: 'Abril_Display';
+    font-weight: 800;
+    color: #7C1111;
+    font-size: 58px;
+    line-height: 64px;
+    margin-bottom: 5px;
+}
+
+.subTitle{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 31px;
+    color: #7C1111;
+    margin-bottom: 9px;
+}
+
+.text{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 24px;
 }
