@@ -349,7 +349,81 @@
     margin-bottom: 30px;
 }
 
+/* accommodation */
 
+#accommodation{
+    background-color: #FBFAF5;
+    position: relative;
+    padding: 160px 0 80px;
+}
+
+#accommodation .container{
+    position: relative;
+    z-index: 10;
+}
+
+#accommodation::after{
+    content: url('/img/Mask Group 4.png');
+    right: 0px;
+    bottom: 115px;
+    position: absolute;
+    z-index: 0;
+}
+
+#accommodation .title{
+    text-align: center;
+    position: relative;
+    width: max-content;
+    margin: 0 auto 62px;
+    padding: 0;
+}
+
+#accommodation .title::after{
+    content: '';
+    background-image: url('/img/Warstwa 2.svg');
+    position: absolute;
+    right: -18px;
+    top: 50%;
+    transform: translate(100%,-50%) rotate(180deg);
+    width: 30px;
+    height: 42px;
+}
+
+#accommodation .title::before{
+    content: '';
+    background-image: url('/img/Warstwa 2.svg');
+    position: absolute;
+    left: -18px;
+    top: 50%;
+    transform: translate(-100%,-50%);
+    width: 30px;
+    height: 42px;
+}
+
+.accommodationText{
+    display: flex;
+    align-items: center;
+}
+
+.accommodationGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 120px;
+}
+
+.accommodationGrid:nth-child(even){
+    margin-bottom: 40px;
+}
+
+.accommodationGrid .text{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.accommodationImg:nth-child(odd) img,
+.accommodationText:nth-child(odd) .text{
+    text-align: right;
+}
 
 
 
@@ -382,6 +456,30 @@
         font-size: 48px;
         line-height: 56px;
     }
+
+    /* accommodation */
+
+    .accommodationGrid{
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .accommodationGrid:nth-child(even){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .accommodationText .text{
+        width: 100%;
+    }
+
+    .accommodationImg,
+    .accommodationText .text{
+        text-align: center!important;
+    }
+
+
+
 }
 
 @media(max-width:768px){
