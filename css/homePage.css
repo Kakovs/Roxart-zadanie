@@ -487,7 +487,7 @@
     background-image: url('/img/Mask Group 1.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 
 .contactLeftSide{
@@ -608,6 +608,11 @@
         line-height: 56px;
     }
 
+    /* about us section */
+    #aboutUsSection .imageRight{
+        text-align: center;
+    }
+
     /* accommodation */
     .accommodationGrid{
         grid-template-columns: 1fr;
@@ -633,13 +638,6 @@
     /* slider */
     .homePageSlider .swiper-slide{
         padding-top: 56.25%;
-    }
-}
-
-@media(max-width:768px){
-    /* about us section */
-    #aboutUsSection .imageRight{
-        text-align: center;
     }
 }
 
