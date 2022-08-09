@@ -1,0 +1,105 @@
+footer{
+    background-color: #7C1111;
+    padding: 74px 0 38px;
+}
+
+footer .footerCenter{
+    align-items: center;
+}
+
+.mainFooter{
+    border-bottom: 1px solid #E5D5BB;
+    padding-bottom: 23px;
+    margin-bottom: 40px;
+}
+
+.contactInfo a,
+.locationInfo p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #fff;
+    font-weight: 400;
+}
+
+.locationInfo p{
+    margin-bottom: 0;
+}
+
+.contactInfo a{
+    max-width: fit-content;
+    margin-bottom: 2px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.contactInfo a::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    transform: translate(0, -50%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contactInfo .cell::before{
+    background-image: url('/img/ic_phone_iphone_48px.svg');
+}
+
+.contactInfo .phone::before{
+    background-image: url('/img/phone-2.svg');
+}
+
+.contactInfo .mail::before{
+    background-image: url('/img/email.svg');
+}
+
+.contactInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.copyrightText{
+    font-size: 14px;
+    color: #e5d5bb;
+    margin-bottom: 0;
+}
+
+.socialMedia{
+    text-align: right;
+}
+
+.socialMedia a:last-child{
+    margin-left: 35px;
+}
+
+/* mobile */
+
+@media(max-width:991px){
+    .footerCenter>div{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footerCenter>div:last-child{
+        margin-bottom: 0;
+    }
+
+    .footerCenter .contactInfo a{
+        margin: auto;
+    }
+}
+
+@media(max-width: 576px){
+    .copyrightInfo{
+        margin-bottom: 20px;
+    }
+
+    .copyrightInfo,
+    .socialMedia{
+        text-align: center;
+    }
+}
