@@ -481,7 +481,112 @@
     border: 1px solid #fff;
 }
 
+/* contact */
 
+#contact{
+    background-image: url('/img/Mask Group 1.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.contactLeftSide{
+    background-color: #FBFAF5;
+    padding: 53px 60px 56px 65px ;
+}
+
+.contactLogo{
+    text-align: right;
+}
+
+#userForm{
+    margin-top: 52px;
+}
+
+#userForm input:focus-visible{
+    outline: none;
+}
+
+.formRow input{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #211d1d;
+    font-size: 14px;
+    color: #211d1d;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.formHomeBaner .formRowLast{
+    margin-bottom: 30px;
+}
+
+.formRow input::placeholder{
+    font-size: 14px;
+    color: #211d1d;
+}
+
+.formButton input{
+    color: #211d1d;
+    font-size: 14px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    background-color: transparent;
+    border: 2px solid #211d1d;
+    text-align: center;
+    padding: 7px 56px;
+    border-radius: 40px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.formButton input:hover{
+    color: #fff;
+    background-color: #211d1d;
+}
+
+.formCheckbox{
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    align-items: center;
+    height: 100%;
+}
+
+.formCheckbox input{
+    border: none;
+    background-image: url('/img/Group 166.svg');
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    position: relative;
+}
+
+.formCheckbox input:checked::after{
+    content: url('/img/Group 166v2.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.formCheckbox p{
+    color: #211d1d;
+    margin-bottom: 0;
+    font-size: 12px;
+    text-decoration: underline;
+    letter-spacing: 0.005em;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+/* footer */
+
+footer{
+    padding: 100px;
+}
 
 
 
@@ -564,6 +669,19 @@
     }
 }
 
+@media(max-width: 576px){
+    /* contact */
+    .contactLeftSide .title,
+    .contactLogo,
+    .formHomeBaner .formButton{
+        text-align: center;
+    }
+
+    .formCheckbox{
+        margin: 20px auto 0;
+    }
+}
+
 @media(max-width:480px){
     /* slider */
     .homePageSlider .swiper-slide{
@@ -574,5 +692,11 @@
 
     #checkMenu .title{
         font-size: 48px
+    }
+
+    /* contact */
+    .contactLeftSide {
+        background-color: #FBFAF5;
+        padding: 53px 20px 56px ;
     }
 }
