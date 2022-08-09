@@ -87,7 +87,7 @@ tabs.forEach(tab => {
 // gallery carousel
 
 const swiperCarousel = new Swiper(".galleryCarousel", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   autoplay: {
@@ -110,4 +110,12 @@ const swiperCarousel = new Swiper(".galleryCarousel", {
       });
     }
   },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+    },
+    991: {
+      slidesPerView: 3,
+    }
+  }
 });

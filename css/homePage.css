@@ -467,6 +467,10 @@
     margin-bottom: 65px;
 }
 
+.galleryCarousel .swiper-slide{
+    text-align: center;
+}
+
 .galleryCarousel .swiper-pagination{
     position: relative;
     bottom: unset;
