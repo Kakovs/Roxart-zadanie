@@ -217,7 +217,7 @@
 #offerSection [data-tab-content] {
     display: none;
 }
-  
+
 #offerSection .active[data-tab-content] {
     display: block;
 }
@@ -582,12 +582,6 @@
     margin-left: 10px;
 }
 
-/* footer */
-
-footer{
-    padding: 100px;
-}
-
 
 
 /* mobile */
@@ -615,7 +609,6 @@ footer{
     }
 
     /* accommodation */
-
     .accommodationGrid{
         grid-template-columns: 1fr;
         grid-gap: 40px;
@@ -689,7 +682,6 @@ footer{
     }
 
     /* checkMenu */
-
     #checkMenu .title{
         font-size: 48px
     }
